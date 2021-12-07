@@ -81,7 +81,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://SamiPilino.github.io/static_templates/blog_post_n.html</loc>
+         <loc>https://SamiPilino.github.io/static_templates/Blog%20Post%20Template.html</loc>
+         <lastmod>2021-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://SamiPilino.github.io/static_templates/File%20Metadata.html</loc>
+         <lastmod>2021-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://SamiPilino.github.io/static_templates/Social%20Media%20Icons.html</loc>
+         <lastmod>2021-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://SamiPilino.github.io/static_templates/Social%20Media%20Links.html</loc>
          <lastmod>2021-12-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
