@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://SamiPilino.github.io/blog/blog_post_5.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Wednesday, September 20, 2023 - Project Blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Wednesday, September 20, 2023";
+    var mkdocs_page_input_path = "blog/blog_post_5.md";
+    var mkdocs_page_url = "/blog/blog_post_5.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Project Blog</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Blog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about.html">About</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../how2guides/how2guides.html">How-To Guides</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorials.html">Tutorials</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../explanations/explanations.html">Explanations</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../reference/reference.html">Reference</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Project Blog</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Wednesday, September 20, 2023</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Anatrax/SamiPilinoBlog.git/edit/master/docs/blog/blog_post_5.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="wednesday-september-20-2023">Wednesday, September 20, 2023</h1>
+<p>Worked on variations of <a href="../projects/projects_3.html">the timer project</a> all day.</p>
+<h2 id="minor-improvements-to-the-granola-timer">Minor Improvements to the Granola Timer</h2>
+<p>I started with some minor improvements to the <a href="">granola timer</a> based on what I remember from the time I recorded the process with <a href="../projects/projects_3.html">the initial timer project</a>. This included removing the session summarization textbox (which is not needed for sufficiently well-defined processes), automatically populating the summary field with session information instead, and .</p>
+<h2 id="finally-implemented-timer-audio-yay-interrupts-actually-work-now">Finally Implemented Timer Audio (Yay! Interrupts actually work now!)</h2>
+<p>I also went through some WAV files of different UI sound effects and found some good "focus timer", "relaxation", and "alarm" sounds I could use, and added those to all the different timer projects.</p>
+<h2 id="scrum-timer-attempt">Scrum Timer Attempt</h2>
+<p>I created a "Scrum" timer from a copy of the Daily Schedule timer and started trying to outline a Sprint in timer form. I opened up a temporary brainstorming file for helping sketch out my ideas and added a ProductGoal, ProductBacklog, SprintGoal, and SprintBacklog. As I sketched out the basic ideas, adding comments and updating my notes along the way, I started realizing I needed to figure out the more basic task-management logic first before adding these more useful artifacts (backlogs, increments, etc.) to the process. So, I paused development on the Scrum Timer project and created an RTOS Timer, which will focus on the core task-management logic for running tasks, scheduling them, and handling interrupts.</p>
+<h2 id="rtos-timer">RTOS Timer</h2>
+<p>To begin the RTOS timer, I designed a simple "report, context-switch, take a break, work" loop which forms the basis for more real-time operation. The original countdown timer is used as the SysTick interrupt, which periodically reschedules tasks so that no one task can hog the CPU. Next, I added a Dashboard area for displaying session-specific components such as a list of tasks or information about the current task. I added a list of sample tasks and defined their "stack frames" with instructions, an instruction pointer, and stack/heap space for any other memory such as variables and functions used by the instructions. Then, I added some task info components to the Dashboard so we can see information about the current task during the "Running Task" stage, but I had to make the code more readable so that I could more easily fix an issue where the Dashboard wasn't updating properly because I had mixed in some application logic during the prototyping stages of creating the Dashboard components. Turns out, I needed to run only one of those new update functions whenever its data changed instead of updating the entire UI. Finally, I added "Block" and "Yield" buttons (which don't do anything yet) to the Current Instruction section after the "Next Instruction" button and started getting stumped on what I should do next. So, I added a "status" field to the tasks for future use in the scheduling algorithm and spent some time brainstorming ideas for the rest of the RTOS Timer implementation.</p>
+<h2 id="other">Other</h2>
+<ul>
+<li>I finally found the board-game money today. I can use it to simulate buying and selling in a simulated market for goods and services.</li>
+<li>I went outside and picked some green-beans</li>
+<li>I answered someone's questions about celery-leaf dehydration temperatures and durations</li>
+<li>I picked a couple of apples from the apple tree in the backyard</li>
+<li>I went on a walk</li>
+</ul>
+<!--
+- For lunch, I ate vegetable soup with zuchhini, spinach/chard, tomato (blended), celery (blended?), and rosemary from the garden. Potatoes could have been the garden ones, but used the ones from the store instead. Also had water, freshly-squeezed lemon juice, and other spices or something which were store-bought.
+- For dinner, I ate the same soup again.
+-->
+<!--
+- consider playing music during breaks
+- consider just watching Twitch streams
+- consider clearing sections of garden that have already been harvested or that we won't be growing more this year
+- Used restroom (poop)
+- Put an apple core in kitchen compost
+- Rinsed a bowl and spoon that were in the sink and put it in the dishwasher
+- Threw floor tissues in trash
+- micro-nap because my eyes feel droopy which probably means I'm tired since I don't think I've been sleeping well lately
+-->
+<!--
+- Idea people get a percentage of profits, I write the plugins, plugins charge per run, plugin goes open source once a plugin makes enough profit
+- Make a AI-powered pencil (erasable, unlike a printer, plus requires no ink) cursive handwriting robot that takes in a message, the message written so far, the next letter to write, the position of the pencil, the velocity (calculated from the previous position) of the pencil, and then the AI tries to predict how to adjust the velocity vector such that it continues drawing out the next letter to write (for "printing" stuff without needing ink, and being able to erase the marks and reuse the paper)
+-->
+<!-- I dug a grave for a dying squirrel next to the grave for the dead rat we found yesterday. But since it was dying, I wanted to wait for it to fully die so I didn't bury it alive. But when I finally came to bury it, it was nowhere to be found. Went to bury squirrel but the cat had already taken in by now (either hid it somewhere or some owner somewhere will get a big surprise). I hope that it wasn't actually dying and it just left. -->
+
+<h2 id="to-do">To Do</h2>
+<p>I still need to finish refactoring the RTOS Timer display code to better handle (in a way that makes more readable sense) the hiding and showing of different elements and adding CSS styling to the Dashboard components.</p>
+<h2 id="some-ideas">Some Ideas</h2>
+<ul>
+<li>Create a way for signalling to others that you're in a focus-session, and have a pad of paper or audio recorder and an easy-to-follow protocol for the interrupter to make their request</li>
+<li>Begin templating workspace fields into summary (Q&amp;A, Ideas, Goal, Process, Summary/Feedback/ActualProcess, etc. - look up workspace fields in your Obsidian vaults for the actual fields)</li>
+<li>After RTOS-Scrum, add in bullet-journal migrations with partial-schedules</li>
+<li>Adjust session times of Daily Schedule to account for the extra time it takes to write the summary (or not if you decide that the extra time is sufficiently accounted for in the breaks) (We're behind 15 minutes from the actual clock because of having to take additional time to wrap-up summaries)</li>
+<li>Use a hyphenated 'SUMMARY' field in Daily Schedule templates because there's often multiple tasks completed during a single session</li>
+</ul>
+<hr />
+<p><em>September 20, 2023</em></p>
+<p><a href="https://www.youtube.com/channel/UC9Qbj5yjVE__GVgyIs_WEwg" title="YouTube"><img alt="youtube_icon.png" src="../img/youtube_icon.png" /></a> <a href="https://github.com/SamiPilino" title="GitHub"><img alt="github_icon.png" src="../img/github_icon.png" /></a> <a href="https://twitter.com/PilinoSami" title="Twitter"><img alt="twitter_icon.png" src="../img/twitter_icon.png" /></a> <a href="https://www.instagram.com/samipilino/" title="Instagram"><img alt="instagram_icon.png" src="../img/instagram_icon.png" /></a></p>
+<!-- Links -->
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>©2021. SamiPilino</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Anatrax/SamiPilinoBlog.git/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
